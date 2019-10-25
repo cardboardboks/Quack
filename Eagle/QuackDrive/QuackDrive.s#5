@@ -6725,9 +6725,16 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="IC5" gate="G$1" pin="IP-_1"/>
 <wire x1="-13.97" y1="153.67" x2="-13.97" y2="156.21" width="0.1524" layer="91"/>
 <wire x1="-13.97" y1="156.21" x2="-10.16" y2="156.21" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="156.21" x2="-10.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="156.21" x2="-10.16" y2="162.56" width="0.1524" layer="91"/>
 <junction x="-13.97" y="156.21"/>
 <label x="-10.16" y="165.1" size="1.778" layer="95" rot="R180"/>
+<wire x1="-10.16" y1="162.56" x2="-10.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="162.56" x2="5.08" y2="162.56" width="0.1524" layer="91"/>
+<junction x="-10.16" y="162.56"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="134.62" x2="20.32" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="162.56" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VM"/>
@@ -6843,11 +6850,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="VBAT_IN" gate="1" pin="P"/>
 <wire x1="-10.16" y1="139.7" x2="-10.16" y2="148.59" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="148.59" x2="-13.97" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="139.7" x2="-10.16" y2="134.62" width="0.1524" layer="91"/>
-<junction x="-10.16" y="139.7"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="134.62" x2="20.32" y2="143.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">

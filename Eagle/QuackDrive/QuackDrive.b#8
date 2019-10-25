@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -193,6 +193,18 @@
 <wire x1="19.773" y1="74.252" x2="19.773" y2="44.752" width="0.254" layer="20"/>
 <wire x1="19.773" y1="44.752" x2="6.4" y2="44.75" width="0.254" layer="20"/>
 <wire x1="6.4" y1="44.75" x2="6.4" y2="74.3" width="0.254" layer="20"/>
+<wire x1="7.4" y1="51.6" x2="7.4" y2="51.7" width="0.2" layer="21"/>
+<wire x1="7.4" y1="51.7" x2="7.4" y2="73.2" width="0.2" layer="21"/>
+<wire x1="7.4" y1="73.2" x2="18.6" y2="73.2" width="0.2" layer="21"/>
+<wire x1="18.6" y1="73.2" x2="18.6" y2="45.85" width="0.2" layer="21"/>
+<wire x1="18.6" y1="45.85" x2="7.4" y2="45.85" width="0.2" layer="21"/>
+<wire x1="7.4" y1="45.85" x2="7.4" y2="51.6" width="0.2" layer="21"/>
+<wire x1="7.4" y1="71.6" x2="7.4" y2="71.7" width="0.2" layer="22"/>
+<wire x1="7.4" y1="71.7" x2="7.4" y2="73.2" width="0.2" layer="22"/>
+<wire x1="7.4" y1="73.2" x2="18.6" y2="73.2" width="0.2" layer="22"/>
+<wire x1="18.6" y1="73.2" x2="18.6" y2="45.85" width="0.2" layer="22"/>
+<wire x1="18.6" y1="45.85" x2="7.4" y2="45.85" width="0.2" layer="22"/>
+<wire x1="7.4" y1="45.85" x2="7.4" y2="71.6" width="0.2" layer="22"/>
 </plain>
 <libraries>
 <library name="okie">

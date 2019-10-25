@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7206,6 +7206,16 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <segment>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="R22" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="PAD4" gate="1" pin="P"/>
+<wire x1="5.08" y1="137.16" x2="7.62" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="137.16" x2="7.62" y2="127" width="0.1524" layer="91"/>
+<pinref part="PAD7" gate="1" pin="P"/>
+<wire x1="7.62" y1="121.92" x2="7.62" y2="127" width="0.1524" layer="91"/>
+<junction x="7.62" y="127"/>
 </segment>
 </net>
 </nets>
