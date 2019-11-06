@@ -187,7 +187,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYTAyNWU5" projecturn="a.cGVyc29uYWw6dWUyYTIyYzdlIzIwMTgwNzA1MTM4OTcwNzA2" f3durn="urn:adsk.wipprod:dm.lineage:p5_z7k6cSM-hszcvDTPD5w" pcbguid="a1ab6c24-f7b4-4103-b49e-f0e4e1df113c" lastpulledtime="" lastsyncedchangeguid="96dd44bb-b89f-0686-e97e-cd10f69f56ad"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYTAyNWU5" projecturn="a.cGVyc29uYWw6dWUyYTIyYzdlIzIwMTgwNzA1MTM4OTcwNzA2" f3durn="urn:adsk.wipprod:dm.lineage:p5_z7k6cSM-hszcvDTPD5w" pcbguid="a1ab6c24-f7b4-4103-b49e-f0e4e1df113c" lastpulledtime="" lastsyncedchangeguid="3c84ac72-0817-26e7-f397-60cf6b7c2caf"/>
 <plain>
 <rectangle x1="10.9" y1="50.8" x2="12.45" y2="53.8" layer="30"/>
 <wire x1="29.423" y1="84.177009375" x2="29.423" y2="77.623009375" width="0.254" layer="20"/>
@@ -507,6 +507,7 @@ design rules under a new name.</description>
 <via x="24.89" y="83.7" extent="1-16" drill="0.254"/>
 <wire x1="24.89" y1="83.7" x2="24.44" y2="83.7" width="0.2032" layer="16"/>
 <wire x1="24.44" y1="83.7" x2="24.45" y2="83.7" width="0" layer="19" extent="1-16"/>
+<via x="24.125" y="83.7" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$34">
 <contactref element="U$2" pad="2"/>
@@ -514,6 +515,7 @@ design rules under a new name.</description>
 <wire x1="24.44" y1="82.9" x2="24.89" y2="82.9" width="0.2032" layer="16"/>
 <via x="24.89" y="82.9" extent="1-16" drill="0.254"/>
 <wire x1="24.89" y1="82.9" x2="24.45" y2="82.9" width="0.2032" layer="1"/>
+<via x="24.125" y="82.9" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$35">
 <contactref element="U$2" pad="3"/>
@@ -521,6 +523,7 @@ design rules under a new name.</description>
 <wire x1="24.45" y1="82.1" x2="24.89" y2="82.1" width="0.2032" layer="1"/>
 <via x="24.89" y="82.1" extent="1-16" drill="0.254"/>
 <wire x1="24.45" y1="82.1" x2="24.44" y2="82.1" width="0" layer="19" extent="1-16"/>
+<via x="24.125" y="82.1" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$36">
 <contactref element="U$2" pad="4"/>
@@ -528,13 +531,16 @@ design rules under a new name.</description>
 <wire x1="24.44" y1="81.3" x2="24.89" y2="81.3" width="0.2032" layer="16"/>
 <via x="24.89" y="81.3" extent="1-16" drill="0.254"/>
 <wire x1="24.89" y1="81.3" x2="24.45" y2="81.3" width="0.2032" layer="1"/>
+<via x="24.125" y="81.3" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$37">
 <contactref element="U$2" pad="5"/>
 <contactref element="U$1" pad="5"/>
 <via x="24.89" y="80.5" extent="1-16" drill="0.254"/>
 <wire x1="24.45" y1="80.5" x2="24.89" y2="80.5" width="0.2032" layer="1"/>
+<via x="24.125" y="80.5" extent="1-16" drill="0.254"/>
 <wire x1="24.45" y1="80.5" x2="24.44" y2="80.5" width="0" layer="19" extent="1-16"/>
+<wire x1="24.125" y1="80.5" x2="24.44" y2="80.5" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$38">
 <contactref element="U$2" pad="6"/>
@@ -542,13 +548,17 @@ design rules under a new name.</description>
 <wire x1="24.45" y1="79.7" x2="24.89" y2="79.7" width="0.2032" layer="1"/>
 <via x="24.89" y="79.7" extent="1-16" drill="0.254"/>
 <wire x1="24.89" y1="79.7" x2="24.44" y2="79.7" width="0.2032" layer="16"/>
+<via x="24.125" y="79.7" extent="1-16" drill="0.254"/>
+<wire x1="24.125" y1="79.7" x2="24.45" y2="79.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$39">
 <contactref element="U$2" pad="7"/>
 <contactref element="U$1" pad="7"/>
 <via x="24.89" y="78.9" extent="1-16" drill="0.254"/>
 <wire x1="24.89" y1="78.9" x2="24.45" y2="78.9" width="0.2032" layer="1"/>
+<via x="24.125" y="78.9" extent="1-16" drill="0.254"/>
 <wire x1="24.45" y1="78.9" x2="24.44" y2="78.9" width="0" layer="19" extent="1-16"/>
+<wire x1="24.125" y1="78.9" x2="24.44" y2="78.9" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$40">
 <contactref element="U$2" pad="8"/>
@@ -556,6 +566,8 @@ design rules under a new name.</description>
 <wire x1="24.45" y1="78.1" x2="24.89" y2="78.1" width="0.2032" layer="1"/>
 <via x="24.89" y="78.1" extent="1-16" drill="0.254"/>
 <wire x1="24.89" y1="78.1" x2="24.44" y2="78.1" width="0.2032" layer="16"/>
+<via x="24.125" y="78.1" extent="1-16" drill="0.254"/>
+<wire x1="24.125" y1="78.1" x2="24.45" y2="78.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$41">
 <contactref element="U$2" pad="9"/>
@@ -612,30 +624,6 @@ design rules under a new name.</description>
 <via x="28.71" y="83.7" extent="1-16" drill="0.254"/>
 <wire x1="28.71" y1="83.7" x2="29.15" y2="83.7" width="0.2032" layer="1"/>
 <wire x1="29.15" y1="83.7" x2="29.16" y2="83.7" width="0" layer="19" extent="1-16"/>
-</signal>
-<signal name="N$1">
-<via x="24.125" y="83.7" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$2">
-<via x="24.125" y="82.9" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$3">
-<via x="24.125" y="82.1" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$4">
-<via x="24.125" y="81.3" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$5">
-<via x="24.125" y="80.5" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$6">
-<via x="24.125" y="79.7" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$7">
-<via x="24.125" y="78.9" extent="1-16" drill="0.254"/>
-</signal>
-<signal name="N$8">
-<via x="24.125" y="78.1" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="N$9">
 <via x="29.425" y="78.1" extent="1-16" drill="0.254"/>
