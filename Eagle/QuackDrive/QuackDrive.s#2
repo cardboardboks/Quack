@@ -1026,57 +1026,6 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="okie">
-<packages>
-<package name="SOT23">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MCP1700T">
-<wire x1="-7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.255" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-9.525" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="VIN" x="-12.7" y="0" length="middle"/>
-<pin name="VOUT" x="10.16" y="5.08" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="-5.08" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MCP1700T">
-<gates>
-<gate name="G$1" symbol="MCP1700T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun">
 <packages>
 <package name="1206">
@@ -4117,93 +4066,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </deviceset>
 </devicesets>
 </library>
-<library name="ACS70331EOLCTR-2P5U3">
-<description>&lt;High Sensitivity, 1 MHz, GMR-Based Current Sensor IC , SOIC-8&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="SOIC127P600X175-8N">
-<description>&lt;b&gt;8 SOICN&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-2.712" y="1.905" dx="1.525" dy="0.65" layer="1"/>
-<smd name="2" x="-2.712" y="0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="3" x="-2.712" y="-0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="4" x="-2.712" y="-1.905" dx="1.525" dy="0.65" layer="1"/>
-<smd name="5" x="2.712" y="-1.905" dx="1.525" dy="0.65" layer="1"/>
-<smd name="6" x="2.712" y="-0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="7" x="2.712" y="0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="8" x="2.712" y="1.905" dx="1.525" dy="0.65" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-3.725" y1="2.75" x2="3.725" y2="2.75" width="0.05" layer="51"/>
-<wire x1="3.725" y1="2.75" x2="3.725" y2="-2.75" width="0.05" layer="51"/>
-<wire x1="3.725" y1="-2.75" x2="-3.725" y2="-2.75" width="0.05" layer="51"/>
-<wire x1="-3.725" y1="-2.75" x2="-3.725" y2="2.75" width="0.05" layer="51"/>
-<wire x1="-1.95" y1="2.45" x2="1.95" y2="2.45" width="0.1" layer="51"/>
-<wire x1="1.95" y1="2.45" x2="1.95" y2="-2.45" width="0.1" layer="51"/>
-<wire x1="1.95" y1="-2.45" x2="-1.95" y2="-2.45" width="0.1" layer="51"/>
-<wire x1="-1.95" y1="-2.45" x2="-1.95" y2="2.45" width="0.1" layer="51"/>
-<wire x1="-1.95" y1="1.18" x2="-0.68" y2="2.45" width="0.1" layer="51"/>
-<wire x1="-1.6" y1="2.45" x2="1.6" y2="2.45" width="0.2" layer="21"/>
-<wire x1="1.6" y1="2.45" x2="1.6" y2="-2.45" width="0.2" layer="21"/>
-<wire x1="1.6" y1="-2.45" x2="-1.6" y2="-2.45" width="0.2" layer="21"/>
-<wire x1="-1.6" y1="-2.45" x2="-1.6" y2="2.45" width="0.2" layer="21"/>
-<wire x1="-3.475" y1="2.58" x2="-1.95" y2="2.58" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ACS70331EOLCTR-2P5U3">
-<wire x1="5.08" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-10.16" x2="27.94" y2="2.54" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<text x="29.21" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="29.21" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="IP+_1" x="0" y="0" length="middle"/>
-<pin name="IP+_2" x="0" y="-2.54" length="middle"/>
-<pin name="IP-_1" x="0" y="-5.08" length="middle"/>
-<pin name="IP-_2" x="0" y="-7.62" length="middle"/>
-<pin name="VCC" x="33.02" y="0" length="middle" rot="R180"/>
-<pin name="VIOUT" x="33.02" y="-2.54" length="middle" rot="R180"/>
-<pin name="NC" x="33.02" y="-5.08" length="middle" direction="nc" rot="R180"/>
-<pin name="GND" x="33.02" y="-7.62" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ACS70331EOLCTR-2P5U3" prefix="IC">
-<description>&lt;b&gt;High Sensitivity, 1 MHz, GMR-Based Current Sensor IC , SOIC-8&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://www.allegromicro.com/~/media/Files/Datasheets/ACS70331-Datasheet.ashx"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ACS70331EOLCTR-2P5U3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC127P600X175-8N">
-<connects>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="IP+_1" pad="1"/>
-<connect gate="G$1" pin="IP+_2" pad="2"/>
-<connect gate="G$1" pin="IP-_1" pad="3"/>
-<connect gate="G$1" pin="IP-_2" pad="4"/>
-<connect gate="G$1" pin="NC" pad="6"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VIOUT" pad="7"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="High Sensitivity, 1 MHz, GMR-Based Current Sensor IC , SOIC-8" constant="no"/>
-<attribute name="HEIGHT" value="1.75mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Allegro Microsystems" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ACS70331EOLCTR-2P5U3" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
-<attribute name="RS_PART_NUMBER" value="" constant="no"/>
-<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="TB67H450FNG_EL">
 <description>&lt;Motor / Motion / Ignition Controllers &amp; Drivers Brushed Motor Driver IC, 50V, 3.5A, TSSOP8 Package, PB-FREE&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -5572,210 +5434,164 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
-<description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
-This library contains capacitors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<library name="ACS70331EESATR-005B3">
 <packages>
-<package name="0402" urn="urn:adsk.eagle:footprint:37389/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0603" urn="urn:adsk.eagle:footprint:37386/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="CAP-PTH-SMALL-KIT" urn="urn:adsk.eagle:footprint:37404/1" library_version="1">
-<description>&lt;h3&gt;CAP-PTH-SMALL-KIT&lt;/h3&gt;
-Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-1.4021" y="-0.9475" curve="-90"/>
-<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
-<vertex x="-1.4046" y="0.9576" curve="-90"/>
-<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
-<vertex x="-1.8491" y="-0.0153" curve="-90"/>
-<vertex x="-1.4046" y="0.452" curve="-90"/>
-<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="1.397" y="-0.9475" curve="-90"/>
-<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
-<vertex x="1.3945" y="0.9576" curve="-90"/>
-<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
-<vertex x="0.95" y="-0.0153" curve="-90"/>
-<vertex x="1.3945" y="0.452" curve="-90"/>
-<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
-</polygon>
+<package name="XDCR_ACS70331EESATR-005B3">
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.3" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-0.3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.3" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="1.3" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.3" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-0.3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="-1.3" width="0.127" layer="21"/>
+<circle x="-2.6" y="0.8" radius="0.1" width="0.2" layer="21"/>
+<circle x="-2.6" y="0.8" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-2.125" y1="2.125" x2="2.125" y2="2.125" width="0.05" layer="39"/>
+<wire x1="2.125" y1="2.125" x2="2.125" y2="-2.125" width="0.05" layer="39"/>
+<wire x1="2.125" y1="-2.125" x2="-2.125" y2="-2.125" width="0.05" layer="39"/>
+<wire x1="-2.125" y1="-2.125" x2="-2.125" y2="2.125" width="0.05" layer="39"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="12" x="0.25" y="1.45" dx="0.3" dy="0.85" layer="1"/>
+<smd name="5" x="0.25" y="-1.45" dx="0.3" dy="0.85" layer="1"/>
+<smd name="9" x="1.45" y="0.25" dx="0.3" dy="0.85" layer="1" rot="R90"/>
+<smd name="11" x="0.75" y="1.45" dx="0.3" dy="0.85" layer="1"/>
+<smd name="6" x="0.75" y="-1.45" dx="0.3" dy="0.85" layer="1"/>
+<smd name="10" x="1.45" y="0.75" dx="0.3" dy="0.85" layer="1" rot="R90"/>
+<smd name="8" x="1.45" y="-0.25" dx="0.3" dy="0.85" layer="1" rot="R90"/>
+<smd name="7" x="1.45" y="-0.75" dx="0.3" dy="0.85" layer="1" rot="R90"/>
+<smd name="1_2" x="-1.25" y="0.5" dx="1.27" dy="0.8" layer="1"/>
+<smd name="3_4" x="-1.25" y="-0.5" dx="1.27" dy="0.8" layer="1"/>
 </package>
 </packages>
-<packages3d>
-<package3d name="0402" urn="urn:adsk.eagle:package:37413/1" type="box" library_version="1">
-<description>Generic 1005 (0402) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0402"/>
-</packageinstances>
-</package3d>
-<package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
-<description>Generic 1608 (0603) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0603"/>
-</packageinstances>
-</package3d>
-<package3d name="CAP-PTH-SMALL-KIT" urn="urn:adsk.eagle:package:37428/1" type="box" library_version="1">
-<description>CAP-PTH-SMALL-KIT
-Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).
-
-Warning: This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<packageinstances>
-<packageinstance name="CAP-PTH-SMALL-KIT"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
-<symbol name="CAP" urn="urn:adsk.eagle:symbol:37385/1" library_version="1">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<symbol name="ACS70331EESATR-005B3">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.1524" layer="94"/>
+<text x="-12.7" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IP+" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="IP-" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="GND" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="NC_8" x="17.78" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="NC_6" x="17.78" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="NC_9" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="NC_11" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="NC_7" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+<pin name="VIOUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="0.1UF" urn="urn:adsk.eagle:component:37472/1" prefix="C" library_version="1">
-<description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<deviceset name="ACS70331EESATR-005B3" prefix="U">
+<description>Current Sensor Current Sensor AC/DC Current 12-Pin QFN EP T/R</description>
 <gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
+<gate name="G$1" symbol="ACS70331EESATR-005B3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0402-16V-10%" package="0402">
+<device name="" package="XDCR_ACS70331EESATR-005B3">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="IP+" pad="1_2"/>
+<connect gate="G$1" pin="IP-" pad="3_4"/>
+<connect gate="G$1" pin="NC_11" pad="11"/>
+<connect gate="G$1" pin="NC_6" pad="6"/>
+<connect gate="G$1" pin="NC_7" pad="7"/>
+<connect gate="G$1" pin="NC_8" pad="8"/>
+<connect gate="G$1" pin="NC_9" pad="9"/>
+<connect gate="G$1" pin="VCC" pad="12"/>
+<connect gate="G$1" pin="VIOUT" pad="10"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37413/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CAP-12416"/>
-<attribute name="VALUE" value="0.1uF"/>
+<attribute name="DESCRIPTION" value=" Current Sensor Current Sensor AC/DC Current 12-Pin QFN EP T/R "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="620-1887-1-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/allegro-microsystems/ACS70331EESATR-005B3/620-1887-1-ND/8120687?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="MF" value="Allegro MicroSystems LLC"/>
+<attribute name="MP" value="ACS70331EESATR-005B3"/>
+<attribute name="PACKAGE" value="WFQFN-12 Allegro MicroSystems LLC"/>
 </technology>
 </technologies>
 </device>
-<device name="-0603-25V-(+80/-20%)" package="0603">
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="AMS1117-3.3">
+<packages>
+<package name="SOT229P700X180-4N">
+<wire x1="-3.36" y1="-1.86" x2="-3.36" y2="1.86" width="0.127" layer="51"/>
+<wire x1="-3.36" y1="1.86" x2="3.36" y2="1.86" width="0.127" layer="51"/>
+<wire x1="3.36" y1="1.86" x2="3.36" y2="-1.86" width="0.127" layer="51"/>
+<wire x1="3.36" y1="-1.86" x2="-3.36" y2="-1.86" width="0.127" layer="51"/>
+<wire x1="-3.36" y1="-1.86" x2="-3.36" y2="1.86" width="0.127" layer="21"/>
+<wire x1="3.36" y1="-1.86" x2="3.36" y2="1.86" width="0.127" layer="21"/>
+<wire x1="-3.36" y1="-1.86" x2="-3.1" y2="-1.86" width="0.127" layer="21"/>
+<wire x1="3.11" y1="-1.86" x2="3.36" y2="-1.86" width="0.127" layer="21"/>
+<wire x1="3.36" y1="1.86" x2="1.87" y2="1.86" width="0.127" layer="21"/>
+<wire x1="-1.76" y1="1.86" x2="-3.36" y2="1.86" width="0.127" layer="21"/>
+<circle x="-2.29" y="-4.373" radius="0.1" width="0.2" layer="21"/>
+<text x="-3.69655" y="4.507990625" size="1.27225" layer="25">&gt;NAME</text>
+<text x="-3.696559375" y="-6.17095" size="1.272259375" layer="27">&gt;VALUE</text>
+<wire x1="-3.61" y1="2.11" x2="-3.61" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="-3.61" y1="-2.11" x2="-3.01" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="-3.01" y1="-2.11" x2="-3.01" y2="-4.25" width="0.05" layer="39"/>
+<wire x1="-3.01" y1="-4.25" x2="3.01" y2="-4.25" width="0.05" layer="39"/>
+<wire x1="3.01" y1="-4.25" x2="3.01" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="3.01" y1="-2.11" x2="3.61" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="3.61" y1="-2.11" x2="3.61" y2="2.11" width="0.05" layer="39"/>
+<wire x1="3.61" y1="2.11" x2="1.87" y2="2.11" width="0.05" layer="39"/>
+<wire x1="1.87" y1="2.11" x2="1.87" y2="4.25" width="0.05" layer="39"/>
+<wire x1="1.87" y1="4.25" x2="-1.87" y2="4.25" width="0.05" layer="39"/>
+<wire x1="-1.87" y1="4.25" x2="-1.87" y2="2.11" width="0.05" layer="39"/>
+<wire x1="-1.87" y1="2.11" x2="-3.61" y2="2.11" width="0.05" layer="39"/>
+<smd name="1" x="-2.29" y="-3.345" dx="0.93" dy="1.31" layer="1" roundness="15"/>
+<smd name="2" x="0" y="-3.345" dx="0.93" dy="1.31" layer="1" roundness="15"/>
+<smd name="3" x="2.29" y="-3.345" dx="0.93" dy="1.31" layer="1" roundness="15"/>
+<smd name="4" x="0" y="3.345" dx="3.24" dy="1.31" layer="1" roundness="15"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AMS1117-3.3">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.1766" y="5.597140625" size="2.54415" layer="95">&gt;NAME</text>
+<text x="-10.1692" y="-8.135359375" size="2.5423" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="VOUT" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="ADJ/GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AMS1117-3.3" prefix="U">
+<description>Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator</description>
+<gates>
+<gate name="G$1" symbol="AMS1117-3.3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT229P700X180-4N">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="ADJ/GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CAP-00810"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08604"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-KIT-EZ-50V-20%" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37428/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08370"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-100V-10%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08390"/>
-<attribute name="VALUE" value="0.1uF"/>
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator "/>
+<attribute name="MF" value="Advanced Monolithic Systems"/>
+<attribute name="MP" value="AMS1117-3.3"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
 </technology>
 </technologies>
 </device>
@@ -5815,7 +5631,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="P+7" library="SparkFun" deviceset="VCC" device=""/>
 <part name="SUPPLY18" library="supply2" deviceset="+5V/2" device="" value="USB_5V"/>
 <part name="SUPPLY19" library="supply2" deviceset="+5V/2" device="" value="USB_5V"/>
-<part name="IC1" library="okie" deviceset="MCP1700T" device="" value="MCP1703T-3302E/CB"/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="SUPPLY24" library="supply2" deviceset="+5V/2" device="" value="USB_5V"/>
 <part name="C2" library="SparkFun2" deviceset="CAP" device="0805" value="10uF"/>
@@ -5823,13 +5638,9 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="C7" library="SparkFun" deviceset="CAP" device="0402" value="1uF"/>
 <part name="C6" library="SparkFun" deviceset="CAP" device="0402" value="1uF"/>
 <part name="C5" library="SparkFun" deviceset="CAP" device="0402" value="1uF"/>
-<part name="IC2" library="okie" deviceset="MCP1700T" device="" value="MCP1703T-3302E/CB"/>
-<part name="C3" library="SparkFun2" deviceset="CAP" device="0805" value="10uF"/>
-<part name="SUPPLY29" library="supply2" deviceset="V+" device="" value="AV+"/>
 <part name="C9" library="SparkFun" deviceset="CAP" device="0402" value="18pF"/>
 <part name="C8" library="SparkFun" deviceset="CAP" device="0402" value="18pF"/>
 <part name="SUPPLY1" library="supply2" deviceset="AGND" device="" value="AV-"/>
-<part name="SUPPLY2" library="supply2" deviceset="AGND" device="" value="AV-"/>
 <part name="SUPPLY3" library="supply2" deviceset="DGND" device="" value="GND"/>
 <part name="SUPPLY4" library="supply2" deviceset="DGND" device="" value="GND"/>
 <part name="SUPPLY6" library="supply2" deviceset="DGND" device="" value="GND"/>
@@ -5877,7 +5688,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="SUPPLY32" library="supply2" deviceset="DGND" device="" value="GND"/>
 <part name="SJ1" library="SparkFun" deviceset="SOLDERJUMPER" device="NO" value="SOLDERJUMPERNO"/>
 <part name="SJ4" library="SparkFun" deviceset="SOLDERJUMPER" device="NO" value="SOLDERJUMPERNO"/>
-<part name="IC5" library="ACS70331EOLCTR-2P5U3" deviceset="ACS70331EOLCTR-2P5U3" device=""/>
 <part name="IC6" library="TB67H450FNG_EL" deviceset="TB67H450FNG,EL" device=""/>
 <part name="SUPPLY36" library="supply2" deviceset="DGND" device="" value="GND"/>
 <part name="IC8" library="TB67H450FNG_EL" deviceset="TB67H450FNG,EL" device=""/>
@@ -5966,7 +5776,8 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="U$7" library="WM8952DKR F" deviceset="WM8952DKR" device="" package3d_urn="urn:adsk.eagle:package:14739097/1"/>
 <part name="U$8" library="WM8952DKR F other half" deviceset="WM8952DKR" device="" package3d_urn="urn:adsk.eagle:package:14739097/1"/>
 <part name="PAD23" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
-<part name="C18" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0402-16V-10%" package3d_urn="urn:adsk.eagle:package:37413/1" value="0.1uF"/>
+<part name="U3" library="ACS70331EESATR-005B3" deviceset="ACS70331EESATR-005B3" device=""/>
+<part name="U5" library="AMS1117-3.3" deviceset="AMS1117-3.3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6056,10 +5867,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <instance part="SUPPLY19" gate="G$1" x="139.7" y="105.41" smashed="yes">
 <attribute name="VALUE" x="135.89" y="108.585" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="G$1" x="266.7" y="123.19" smashed="yes">
-<attribute name="NAME" x="259.08" y="131.445" size="1.27" layer="95"/>
-<attribute name="VALUE" x="259.08" y="113.665" size="1.27" layer="96"/>
-</instance>
 <instance part="P+4" gate="1" x="281.94" y="130.81" smashed="yes">
 <attribute name="VALUE" x="280.924" y="134.366" size="1.778" layer="96"/>
 </instance>
@@ -6086,17 +5893,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <attribute name="NAME" x="166.116" y="279.781" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="166.116" y="274.701" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="IC2" gate="G$1" x="266.7" y="90.17" smashed="yes">
-<attribute name="NAME" x="259.08" y="98.425" size="1.27" layer="95"/>
-<attribute name="VALUE" x="259.08" y="80.645" size="1.27" layer="96"/>
-</instance>
-<instance part="C3" gate="G$1" x="281.94" y="87.63" smashed="yes">
-<attribute name="NAME" x="283.464" y="90.551" size="1.778" layer="95"/>
-<attribute name="VALUE" x="283.464" y="85.471" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY29" gate="1" x="281.94" y="100.33" smashed="yes">
-<attribute name="VALUE" x="280.67" y="101.6" size="1.778" layer="96"/>
-</instance>
 <instance part="C9" gate="G$1" x="69.85" y="71.12" smashed="yes" rot="MR90">
 <attribute name="NAME" x="72.771" y="72.644" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="67.691" y="72.644" size="1.778" layer="96" rot="MR90"/>
@@ -6107,9 +5903,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="223.52" y="102.87" smashed="yes">
 <attribute name="VALUE" x="220.853" y="99.695" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY2" gate="G$1" x="281.94" y="77.47" smashed="yes">
-<attribute name="VALUE" x="279.273" y="74.295" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY3" gate="G$1" x="281.94" y="110.49" smashed="yes">
 <attribute name="VALUE" x="279.273" y="107.315" size="1.778" layer="96"/>
@@ -6268,9 +6061,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </instance>
 <instance part="SJ4" gate="1" x="67.31" y="124.46" smashed="yes" rot="R180">
 <attribute name="NAME" x="69.85" y="121.92" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="IC5" gate="G$1" x="-13.97" y="148.59" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-17.78" y="143.51" size="1.778" layer="96" rot="R180" align="center-left"/>
 </instance>
 <instance part="IC6" gate="G$1" x="-199.39" y="234.95" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-205.74" y="229.87" size="1.778" layer="96" rot="R180" align="center-left"/>
@@ -6517,9 +6307,13 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <instance part="PAD23" gate="1" x="89.408" y="223.52" smashed="yes">
 <attribute name="VALUE" x="88.265" y="220.218" size="1.778" layer="96"/>
 </instance>
-<instance part="C18" gate="G$1" x="-257.81" y="234.95" smashed="yes">
-<attribute name="NAME" x="-256.286" y="237.871" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="-256.286" y="232.791" size="1.778" layer="96" font="vector"/>
+<instance part="U3" gate="G$1" x="-31.75" y="158.75" smashed="yes" rot="R180">
+<attribute name="NAME" x="-78.74" y="142.748" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-78.74" y="176.53" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="U5" gate="G$1" x="261.62" y="123.19" smashed="yes">
+<attribute name="NAME" x="251.4434" y="128.787140625" size="2.54415" layer="95"/>
+<attribute name="VALUE" x="251.4508" y="115.054640625" size="2.5423" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6582,9 +6376,10 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="281.94" y1="128.27" x2="281.94" y2="130.81" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="128.27" x2="281.94" y2="128.27" width="0.1524" layer="91"/>
 <junction x="281.94" y="128.27"/>
-<pinref part="IC1" gate="G$1" pin="VOUT"/>
 <pinref part="P+4" gate="1" pin="VCC"/>
 <pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="U5" gate="G$1" pin="VOUT"/>
+<wire x1="276.86" y1="125.73" x2="276.86" y2="128.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="95.25" y1="137.16" x2="95.25" y2="139.7" width="0.1524" layer="91"/>
@@ -6700,15 +6495,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </net>
 <net name="AV+" class="0">
 <segment>
-<wire x1="281.94" y1="92.71" x2="281.94" y2="95.25" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="95.25" x2="281.94" y2="97.79" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="95.25" x2="281.94" y2="95.25" width="0.1524" layer="91"/>
-<junction x="281.94" y="95.25"/>
-<pinref part="IC2" gate="G$1" pin="VOUT"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="SUPPLY29" gate="1" pin="V+"/>
-</segment>
-<segment>
 <wire x1="147.32" y1="271.78" x2="152.4" y2="271.78" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="271.78" x2="152.4" y2="274.32" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="264.16" x2="152.4" y2="271.78" width="0.1524" layer="91"/>
@@ -6719,17 +6505,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </segment>
 </net>
 <net name="AV-" class="0">
-<segment>
-<wire x1="281.94" y1="85.09" x2="281.94" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="85.09" x2="279.4" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="85.09" x2="279.4" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="82.55" x2="281.94" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="82.55" x2="281.94" y2="80.01" width="0.1524" layer="91"/>
-<junction x="281.94" y="82.55"/>
-<pinref part="IC2" gate="G$1" pin="GND"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="SUPPLY2" gate="G$1" pin="AGND"/>
-</segment>
 <segment>
 <wire x1="139.7" y1="271.78" x2="137.16" y2="271.78" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="271.78" x2="137.16" y2="269.24" width="0.1524" layer="91"/>
@@ -6826,21 +6601,17 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <net name="VIN" class="0">
 <segment>
 <wire x1="223.52" y1="130.81" x2="223.52" y2="123.19" width="0.1524" layer="91"/>
-<wire x1="254" y1="123.19" x2="251.46" y2="123.19" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="123.19" x2="243.84" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="123.19" x2="243.84" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="120.65" x2="243.84" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="128.27" x2="243.84" y2="128.27" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="128.27" x2="243.84" y2="123.19" width="0.1524" layer="91"/>
-<wire x1="254" y1="90.17" x2="251.46" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="90.17" x2="251.46" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="123.19" x2="243.84" y2="123.19" width="0.1524" layer="91"/>
-<junction x="251.46" y="123.19"/>
 <junction x="243.84" y="123.19"/>
 <pinref part="VDD1" gate="G$1" pin="VDD"/>
-<pinref part="IC1" gate="G$1" pin="VIN"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="C1" gate="G$1" pin="+"/>
-<pinref part="IC2" gate="G$1" pin="VIN"/>
+<pinref part="U5" gate="G$1" pin="VIN"/>
+<wire x1="246.38" y1="123.19" x2="246.38" y2="125.73" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
@@ -7295,9 +7066,10 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="279.4" y1="118.11" x2="279.4" y2="115.57" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="115.57" x2="281.94" y2="115.57" width="0.1524" layer="91"/>
 <junction x="281.94" y="115.57"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="SUPPLY3" gate="G$1" pin="DGND"/>
+<pinref part="U5" gate="G$1" pin="ADJ/GND"/>
+<wire x1="276.86" y1="120.65" x2="276.86" y2="118.11" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="243.84" y1="113.03" x2="243.84" y2="107.95" width="0.1524" layer="91"/>
@@ -7440,18 +7212,15 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <label x="-66.04" y="213.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="IC5" gate="G$1" pin="IP-_2"/>
-<pinref part="IC5" gate="G$1" pin="IP-_1"/>
-<wire x1="-13.97" y1="153.67" x2="-13.97" y2="156.21" width="0.1524" layer="91"/>
-<junction x="-13.97" y="156.21"/>
+<wire x1="-13.97" y1="153.67" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="5.08" y1="158.75" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="157.48" x2="-12.7" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="157.48" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="-13.97" y1="157.48" x2="-13.97" y2="156.21" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="157.48" x2="-12.7" y2="165.1" width="0.1524" layer="91"/>
 <junction x="-12.7" y="157.48"/>
 <label x="-12.7" y="167.64" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="IP-"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -7504,9 +7273,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="PAD12" gate="G$1" pin="P"/>
 <wire x1="-229.87" y1="240.03" x2="-242.57" y2="240.03" width="0.1524" layer="91"/>
 <wire x1="-242.57" y1="240.03" x2="-243.84" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="-257.81" y1="240.03" x2="-242.57" y2="240.03" width="0.1524" layer="91"/>
-<junction x="-242.57" y="240.03"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -7515,10 +7281,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <pinref part="PAD11" gate="G$1" pin="P"/>
 <wire x1="-229.87" y1="234.95" x2="-242.57" y2="234.95" width="0.1524" layer="91"/>
 <wire x1="-242.57" y1="234.95" x2="-243.84" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="C18" gate="G$1" pin="2"/>
-<wire x1="-257.81" y1="232.41" x2="-243.84" y2="232.41" width="0.1524" layer="91"/>
-<wire x1="-243.84" y1="232.41" x2="-243.84" y2="233.68" width="0.1524" layer="91"/>
-<junction x="-243.84" y="233.68"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -7537,14 +7299,11 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </net>
 <net name="VBAT_IN" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="IP+_1"/>
-<pinref part="IC5" gate="G$1" pin="IP+_2"/>
-<wire x1="-13.97" y1="151.13" x2="-13.97" y2="148.59" width="0.1524" layer="91"/>
-<junction x="-13.97" y="148.59"/>
-<wire x1="-10.16" y1="137.16" x2="-10.16" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="148.59" x2="-13.97" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="-13.97" y1="151.13" x2="-10.16" y2="151.13" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="137.16" x2="-10.16" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="P$1"/>
 <wire x1="-5.08" y1="137.16" x2="-10.16" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IP+"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -7698,11 +7457,11 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="0" y1="203.2" x2="0" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="0" y1="182.88" x2="-55.88" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="182.88" x2="-55.88" y2="151.13" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="VIOUT"/>
-<wire x1="-55.88" y1="151.13" x2="-46.99" y2="151.13" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$16"/>
 <wire x1="12.7" y1="203.2" x2="0" y2="203.2" width="0.1524" layer="91"/>
 <label x="27.94" y="203.2" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="VIOUT"/>
+<wire x1="-49.53" y1="151.13" x2="-55.88" y2="151.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOT4_IN1" class="0">
@@ -7728,9 +7487,7 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </segment>
 <segment>
 <wire x1="2.54" y1="180.34" x2="-53.34" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="180.34" x2="-53.34" y2="156.21" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="GND"/>
-<wire x1="-46.99" y1="156.21" x2="-53.34" y2="156.21" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="180.34" x2="-53.34" y2="171.45" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="P$12"/>
 <wire x1="2.54" y1="180.34" x2="2.54" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="210.82" x2="2.54" y2="213.36" width="0.1524" layer="91"/>
@@ -7739,6 +7496,8 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="12.7" y1="210.82" x2="2.54" y2="210.82" width="0.1524" layer="91"/>
 <junction x="2.54" y="210.82"/>
 <label x="27.94" y="210.82" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<wire x1="-49.53" y1="171.45" x2="-53.34" y2="171.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="GND"/>
@@ -7862,9 +7621,9 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="12.7" y1="205.74" x2="5.08" y2="205.74" width="0.1524" layer="91"/>
 <junction x="5.08" y="205.74"/>
 <label x="27.94" y="205.74" size="1.778" layer="95"/>
-<wire x1="-58.42" y1="177.8" x2="-58.42" y2="148.59" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="VCC"/>
-<wire x1="-58.42" y1="148.59" x2="-46.99" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="177.8" x2="-58.42" y2="146.05" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VCC"/>
+<wire x1="-49.53" y1="146.05" x2="-58.42" y2="146.05" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-31.75" y1="208.28" x2="-29.21" y2="208.28" width="0.1524" layer="91"/>

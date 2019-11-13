@@ -6640,13 +6640,13 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="IC2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$7"/>
-<wire x1="55.88" y1="226.06" x2="66.04" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="226.06" x2="66.04" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="228.6" x2="66.04" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="246.38" x2="73.66" y2="245.11" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="246.38" x2="73.66" y2="246.38" width="0.1524" layer="91"/>
 <label x="71.12" y="248.92" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="P$6"/>
+<wire x1="55.88" y1="228.6" x2="66.04" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="33" class="0">
@@ -6748,7 +6748,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <wire x1="119.38" y1="218.44" x2="94.488" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="203.2" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="203.2" x2="55.88" y2="203.2" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="P$16"/>
 <label x="68.58" y="203.2" size="1.778" layer="95"/>
 </segment>
@@ -6792,6 +6792,11 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="UC1" gate="G$1" pin="PA0_WKUP/USART2_CTS/ADC12_IN0/TIM2_CH1_ETR"/>
 <wire x1="119.38" y1="231.14" x2="93.98" y2="231.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$7"/>
+<wire x1="55.88" y1="226.06" x2="60.96" y2="226.06" width="0.1524" layer="91"/>
+<label x="60.96" y="226.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="12" class="0">
 <segment>
@@ -6826,12 +6831,22 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <label x="238.76" y="241.3" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PB7/I2C1_SDA/TIM4_CH2"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$5"/>
+<wire x1="55.88" y1="231.14" x2="60.96" y2="231.14" width="0.1524" layer="91"/>
+<label x="60.96" y="231.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="16" class="0">
 <segment>
 <wire x1="259.08" y1="238.76" x2="218.44" y2="238.76" width="0.1524" layer="91"/>
 <label x="238.76" y="238.76" size="1.778" layer="95"/>
 <pinref part="UC1" gate="G$1" pin="PB6/I2C1_SCL/TIM4_CH1"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="55.88" y1="241.3" x2="60.96" y2="241.3" width="0.1524" layer="91"/>
+<label x="60.96" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="17" class="0">
@@ -6866,10 +6881,11 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <wire x1="-24.13" y1="205.74" x2="-31.75" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="-31.75" y1="205.74" x2="-17.78" y2="205.74" width="0.1524" layer="91"/>
 <junction x="-31.75" y="205.74"/>
-<wire x1="-17.78" y1="205.74" x2="-17.78" y2="228.6" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$6"/>
-<wire x1="12.7" y1="228.6" x2="-17.78" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="205.74" x2="-17.78" y2="227.33" width="0.1524" layer="91"/>
 <label x="27.94" y="228.6" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="P$7"/>
+<wire x1="12.7" y1="226.06" x2="12.7" y2="227.33" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="227.33" x2="-17.78" y2="227.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="21" class="0">
@@ -7165,9 +7181,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <net name="VBAT_CUR" class="0">
 <segment>
 <wire x1="5.08" y1="172.72" x2="10.16" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="172.72" x2="10.16" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$7"/>
-<wire x1="10.16" y1="226.06" x2="12.7" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="172.72" x2="10.16" y2="228.6" width="0.1524" layer="91"/>
 <label x="27.94" y="226.06" size="1.778" layer="95"/>
 <pinref part="SJ5" gate="1" pin="1"/>
 <wire x1="10.16" y1="156.21" x2="10.16" y2="172.72" width="0.1524" layer="91"/>
@@ -7188,6 +7202,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <junction x="-55.88" y="114.3"/>
 <pinref part="SJ6" gate="1" pin="2"/>
 <wire x1="5.08" y1="172.72" x2="5.08" y2="168.91" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$6"/>
+<wire x1="10.16" y1="228.6" x2="12.7" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VM"/>
@@ -7810,24 +7826,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <junction x="314.96" y="349.25"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$6"/>
-<wire x1="55.88" y1="228.6" x2="60.96" y2="228.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$5"/>
-<wire x1="55.88" y1="231.14" x2="60.96" y2="231.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
-<wire x1="55.88" y1="241.3" x2="60.96" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="8" class="0">
 <segment>
 <pinref part="UC1" gate="G$1" pin="PA3/USART2_RX/ADC12_IN3/TIM2_CH4"/>
@@ -8135,14 +8133,14 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="102,1,-153.67,203.2,DGND,PWR_GND,,,,"/>
 <approved hash="102,1,-73.66,203.2,DGND,PWR_GND,,,,"/>
 <approved hash="102,1,63.5,198.12,DGND,GND,,,,"/>
-<approved hash="102,1,73.66,215.9,DGND,GND,,,,"/>
+<approved hash="102,1,73.66,222.25,DGND,GND,,,,"/>
 <approved hash="102,1,-48.26,101.6,GND,PWR_GND,,,,"/>
 <approved hash="102,1,-55.88,101.6,GND,PWR_GND,,,,"/>
 <approved hash="102,1,-2.54,101.6,GND,PWR_GND,,,,"/>
 <approved hash="102,1,-15.24,88.9,GND,PWR_GND,,,,"/>
 <approved hash="102,1,7.62,101.6,GND,PWR_GND,,,,"/>
 <approved hash="102,1,17.78,101.6,GND,PWR_GND,,,,"/>
-<approved hash="201,1,73.66,215.9,DGND,GND\, PWR_GND,,,,"/>
+<approved hash="201,1,73.66,222.25,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,63.5,198.12,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,-73.66,203.2,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,-153.67,203.2,DGND,GND\, PWR_GND,,,,"/>
@@ -8197,22 +8195,14 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="104,1,162.56,264.16,UC1,VDD_3,VCC,,,"/>
 <approved hash="104,1,152.4,187.96,UC1,VSS_A,AV-,,,"/>
 <approved hash="202,1,-25.4,104.14,U2,BP,,,,"/>
-<approved hash="209,1,119.38,200.66,0,,,,,"/>
-<approved hash="106,1,119.38,200.66,0,,,,,"/>
-<approved hash="209,1,119.38,203.2,1,,,,,"/>
-<approved hash="106,1,119.38,203.2,1,,,,,"/>
 <approved hash="106,1,119.38,205.74,2,,,,,"/>
 <approved hash="106,1,119.38,226.06,9,,,,,"/>
-<approved hash="106,1,119.38,231.14,11,,,,,"/>
 <approved hash="209,1,119.38,241.3,12,,,,,"/>
 <approved hash="106,1,119.38,241.3,12,,,,,"/>
 <approved hash="209,1,119.38,243.84,13,,,,,"/>
 <approved hash="106,1,119.38,243.84,13,,,,,"/>
 <approved hash="209,1,119.38,246.38,14,,,,,"/>
 <approved hash="106,1,119.38,246.38,14,,,,,"/>
-<approved hash="106,1,218.44,241.3,15,,,,,"/>
-<approved hash="209,1,218.44,238.76,16,,,,,"/>
-<approved hash="106,1,218.44,238.76,16,,,,,"/>
 <approved hash="209,1,218.44,236.22,17,,,,,"/>
 <approved hash="106,1,218.44,236.22,17,,,,,"/>
 <approved hash="106,1,218.44,233.68,18,,,,,"/>
@@ -8221,6 +8211,11 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="106,1,218.44,226.06,21,,,,,"/>
 <approved hash="106,1,218.44,223.52,22,,,,,"/>
 <approved hash="106,1,218.44,220.98,23,,,,,"/>
+<approved hash="106,1,218.44,218.44,24,,,,,"/>
+<approved hash="209,1,218.44,208.28,28,,,,,"/>
+<approved hash="106,1,218.44,208.28,28,,,,,"/>
+<approved hash="209,1,218.44,205.74,29,,,,,"/>
+<approved hash="106,1,218.44,205.74,29,,,,,"/>
 <approved hash="209,1,218.44,203.2,30,,,,,"/>
 <approved hash="106,1,218.44,203.2,30,,,,,"/>
 <approved hash="209,1,218.44,200.66,31,,,,,"/>
@@ -8239,7 +8234,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="113,1,127.991,95.25,PAD20,,,,,"/>
 <approved hash="113,1,16.51,112.751,PAD21,,,,,"/>
 <approved hash="113,1,16.51,103.149,PAD22,,,,,"/>
-<approved hash="113,1,94.2086,223.52,PAD24,,,,,"/>
+<approved hash="113,1,91.6686,223.52,PAD23,,,,,"/>
 </errors>
 </schematic>
 </drawing>
