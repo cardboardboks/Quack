@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-11-16T12:49:13Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 0.94,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "QuackDrive"
+        },
+        "Owner": "Hadley Boks-Wilson <cardboard_boks@hotmail.com>",
+        "Size": {
+            "X": 35.923,
+            "Y": 27.9
+        }
+    }
+}
