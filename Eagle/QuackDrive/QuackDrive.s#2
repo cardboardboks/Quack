@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5575,6 +5575,87 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
+<description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
+This library contains capacitors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0603" urn="urn:adsk.eagle:footprint:37386/1" library_version="1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
+<description>Generic 1608 (0603) package
+0.2mm courtyard excess rounded to nearest 0.05mm.</description>
+<packageinstances>
+<packageinstance name="0603"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="CAP" urn="urn:adsk.eagle:symbol:37385/1" library_version="1">
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
+<text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
+<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="18PF" urn="urn:adsk.eagle:component:37442/1" prefix="C" library_version="1">
+<description>&lt;h3&gt;18pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-50V-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08267" constant="no"/>
+<attribute name="VALUE" value="18pF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5618,8 +5699,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <part name="IC2" library="okie" deviceset="MCP1700T" device="" value="MCP1703T-3302E/CB"/>
 <part name="C3" library="SparkFun2" deviceset="CAP" device="0805" value="10uF"/>
 <part name="SUPPLY29" library="supply2" deviceset="V+" device="" value="AV+"/>
-<part name="C9" library="SparkFun" deviceset="CAP" device="0402" value="18pF"/>
-<part name="C8" library="SparkFun" deviceset="CAP" device="0402" value="18pF"/>
 <part name="SUPPLY1" library="supply2" deviceset="AGND" device="" value="AV-"/>
 <part name="SUPPLY2" library="supply2" deviceset="AGND" device="" value="AV-"/>
 <part name="SUPPLY3" library="supply2" deviceset="DGND" device="" value="GND"/>
@@ -5758,6 +5837,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <part name="U$8" library="WM8952DKR F other half" deviceset="WM8952DKR" device="" package3d_urn="urn:adsk.eagle:package:14739097/1"/>
 <part name="PAD23" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="U3" library="ACS70331EESATR-005B3" deviceset="ACS70331EESATR-005B3" device=""/>
+<part name="C18" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="18PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="18pF"/>
+<part name="C20" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="18PF" device="-0603-50V-5%" package3d_urn="urn:adsk.eagle:package:37414/1" value="18pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -5887,14 +5968,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 </instance>
 <instance part="SUPPLY29" gate="1" x="281.94" y="100.33" smashed="yes">
 <attribute name="VALUE" x="280.67" y="101.6" size="1.778" layer="96"/>
-</instance>
-<instance part="C9" gate="G$1" x="69.85" y="71.12" smashed="yes" rot="MR90">
-<attribute name="NAME" x="72.771" y="72.644" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="67.691" y="72.644" size="1.778" layer="96" rot="MR90"/>
-</instance>
-<instance part="C8" gate="G$1" x="69.85" y="86.36" smashed="yes" rot="MR90">
-<attribute name="NAME" x="72.771" y="87.884" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="67.691" y="87.884" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="223.52" y="102.87" smashed="yes">
 <attribute name="VALUE" x="220.853" y="99.695" size="1.778" layer="96"/>
@@ -6057,8 +6130,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <instance part="SJ1" gate="1" x="224.79" y="269.24" smashed="yes" rot="R180">
 <attribute name="NAME" x="227.33" y="266.7" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="SJ4" gate="1" x="67.31" y="124.46" smashed="yes" rot="R180">
-<attribute name="NAME" x="69.85" y="121.92" size="1.778" layer="95" rot="R180"/>
+<instance part="SJ4" gate="1" x="71.12" y="124.46" smashed="yes" rot="R180">
+<attribute name="NAME" x="73.66" y="121.92" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="IC6" gate="G$1" x="-199.39" y="234.95" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-205.74" y="229.87" size="1.778" layer="96" rot="R180" align="center-left"/>
@@ -6309,6 +6382,14 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <attribute name="NAME" x="-78.74" y="142.748" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-78.74" y="176.53" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C18" gate="G$1" x="72.39" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.469" y="87.884" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="74.549" y="87.884" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="C20" gate="G$1" x="72.39" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="69.469" y="72.644" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="74.549" y="72.644" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6548,8 +6629,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <wire x1="82.55" y1="76.2" x2="82.55" y2="71.12" width="0.1524" layer="91"/>
 <junction x="82.55" y="71.12"/>
 <label x="90.17" y="71.12" size="1.778" layer="95"/>
-<pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="OSC" gate="G$1" pin="2"/>
+<pinref part="C20" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="OSC_OUT" class="0">
@@ -6564,8 +6645,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <wire x1="82.55" y1="81.28" x2="82.55" y2="86.36" width="0.1524" layer="91"/>
 <junction x="82.55" y="86.36"/>
 <label x="87.63" y="86.36" size="1.778" layer="95"/>
-<pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="OSC" gate="G$1" pin="1"/>
+<pinref part="C18" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6583,7 +6664,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="UC1" gate="G$1" pin="NRST"/>
 </segment>
 <segment>
-<wire x1="72.39" y1="124.46" x2="95.25" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="124.46" x2="95.25" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="95.25" y1="124.46" x2="95.25" y2="127" width="0.1524" layer="91"/>
 <label x="80.01" y="124.46" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -7115,18 +7196,18 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="DGND"/>
 <pinref part="SJ4" gate="1" pin="2"/>
-<wire x1="62.23" y1="124.46" x2="59.69" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="124.46" x2="59.69" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="59.69" y1="124.46" x2="59.69" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="67.31" y1="86.36" x2="64.77" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="SUPPLY7" gate="G$1" pin="DGND"/>
+<pinref part="C18" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="67.31" y1="71.12" x2="64.77" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="SUPPLY6" gate="G$1" pin="DGND"/>
+<pinref part="C20" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="160.02" y1="110.49" x2="160.02" y2="107.95" width="0.1524" layer="91"/>
@@ -7231,10 +7312,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <wire x1="-13.97" y1="153.67" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="5.08" y1="158.75" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="157.48" x2="-12.7" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="157.48" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="157.48" x2="-12.7" y2="165.1" width="0.1524" layer="91"/>
-<junction x="-12.7" y="157.48"/>
+<wire x1="5.08" y1="157.48" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
 <label x="-12.7" y="167.64" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="IP-"/>
 </segment>
@@ -8077,7 +8155,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="102,1,223.52,105.41,AGND,AV-,,,,"/>
 <approved hash="102,1,281.94,80.01,AGND,AV-,,,,"/>
 <approved hash="102,1,281.94,113.03,DGND,GND,,,,"/>
-<approved hash="102,1,59.69,106.68,DGND,GND,,,,"/>
+<approved hash="102,1,59.69,111.76,DGND,GND,,,,"/>
 <approved hash="102,1,64.77,71.12,DGND,GND,,,,"/>
 <approved hash="102,1,64.77,86.36,DGND,GND,,,,"/>
 <approved hash="102,1,160.02,80.01,DGND,GND,,,,"/>
@@ -8157,7 +8235,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="201,1,160.02,80.01,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,64.77,86.36,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,64.77,71.12,DGND,GND\, PWR_GND,,,,"/>
-<approved hash="201,1,59.69,106.68,DGND,GND\, PWR_GND,,,,"/>
+<approved hash="201,1,59.69,111.76,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,281.94,113.03,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,17.78,101.6,GND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,7.62,101.6,GND,GND\, PWR_GND,,,,"/>
@@ -8180,6 +8258,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="104,1,162.56,264.16,UC1,VDD_3,VCC,,,"/>
 <approved hash="104,1,152.4,187.96,UC1,VSS_A,AV-,,,"/>
 <approved hash="202,1,-25.4,104.14,U2,BP,,,,"/>
+<approved hash="104,1,-49.53,171.45,U3,GND,PWR_GND,,,"/>
+<approved hash="104,1,-49.53,146.05,U3,VCC,PWR_VCC,,,"/>
 <approved hash="106,1,119.38,205.74,2,,,,,"/>
 <approved hash="106,1,119.38,226.06,9,,,,,"/>
 <approved hash="209,1,119.38,241.3,12,,,,,"/>
@@ -8207,8 +8287,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <approved hash="106,1,218.44,200.66,31,,,,,"/>
 <approved hash="113,1,233.68,128.852,D2,,,,,"/>
 <approved hash="113,1,-114.021,257.813,GND,,,,,"/>
-<approved hash="113,1,249.911,349.25,PAD4,,,,,"/>
-<approved hash="113,1,249.911,345.44,PAD7,,,,,"/>
+<approved hash="113,1,249.911,345.44,PAD4,,,,,"/>
+<approved hash="113,1,249.911,349.25,PAD7,,,,,"/>
 <approved hash="113,1,249.911,341.63,PAD13,,,,,"/>
 <approved hash="113,1,237.769,341.63,PAD14,,,,,"/>
 <approved hash="113,1,237.769,345.44,PAD15,,,,,"/>
