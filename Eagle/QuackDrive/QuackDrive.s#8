@@ -5638,7 +5638,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <part name="SUPPLY5" library="supply2" deviceset="DGND" device="" value="GND"/>
 <part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402" value="10k"/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="0402" value="10k"/>
-<part name="R4" library="SparkFun" deviceset="RESISTOR" device="0402" value="1k"/>
 <part name="D2" library="SparkFun3" deviceset="DIODE" device="SOD"/>
 <part name="C1" library="SparkFun3" deviceset="CAP_POL" device="1206" value="100uF"/>
 <part name="L1" library="SparkFun3" deviceset="INDUCTOR" device="0603" value="ferrite bead"/>
@@ -5903,8 +5902,8 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <instance part="SUPPLY3" gate="G$1" x="281.94" y="110.49" smashed="yes">
 <attribute name="VALUE" x="279.273" y="107.315" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="59.69" y="104.14" smashed="yes">
-<attribute name="VALUE" x="57.023" y="100.965" size="1.778" layer="96"/>
+<instance part="SUPPLY4" gate="G$1" x="59.69" y="109.22" smashed="yes">
+<attribute name="VALUE" x="57.023" y="106.045" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="62.23" y="71.12" smashed="yes" rot="R270">
 <attribute name="VALUE" x="59.055" y="73.787" size="1.778" layer="96" rot="R270"/>
@@ -5960,10 +5959,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <instance part="R3" gate="G$1" x="95.25" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="93.7514" y="128.27" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="98.552" y="128.27" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R4" gate="G$1" x="59.69" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="58.1914" y="110.49" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="62.992" y="110.49" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="D2" gate="G$1" x="233.68" y="128.27" smashed="yes">
 <attribute name="NAME" x="236.22" y="128.7526" size="1.778" layer="95"/>
@@ -6577,14 +6572,6 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="SJ1" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="62.23" y1="124.46" x2="59.69" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="59.69" y1="124.46" x2="59.69" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="SJ4" gate="1" pin="2"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <wire x1="86.36" y1="233.68" x2="119.38" y2="233.68" width="0.1524" layer="91"/>
@@ -7122,9 +7109,10 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <pinref part="PAD17" gate="1" pin="P"/>
 </segment>
 <segment>
-<wire x1="59.69" y1="109.22" x2="59.69" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY4" gate="G$1" pin="DGND"/>
+<pinref part="SJ4" gate="1" pin="2"/>
+<wire x1="62.23" y1="124.46" x2="59.69" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="59.69" y1="124.46" x2="59.69" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="67.31" y1="86.36" x2="64.77" y2="86.36" width="0.1524" layer="91"/>

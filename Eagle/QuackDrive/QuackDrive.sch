@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7312,10 +7312,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-13.97" y1="153.67" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="5.08" y1="158.75" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="157.48" x2="-12.7" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="157.48" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="157.48" x2="-12.7" y2="165.1" width="0.1524" layer="91"/>
-<junction x="-12.7" y="157.48"/>
+<wire x1="5.08" y1="157.48" x2="-13.97" y2="157.48" width="0.1524" layer="91"/>
 <label x="-12.7" y="167.64" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="IP-"/>
 </segment>
@@ -8158,7 +8155,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="102,1,223.52,105.41,AGND,AV-,,,,"/>
 <approved hash="102,1,281.94,80.01,AGND,AV-,,,,"/>
 <approved hash="102,1,281.94,113.03,DGND,GND,,,,"/>
-<approved hash="102,1,59.69,106.68,DGND,GND,,,,"/>
+<approved hash="102,1,59.69,111.76,DGND,GND,,,,"/>
 <approved hash="102,1,64.77,71.12,DGND,GND,,,,"/>
 <approved hash="102,1,64.77,86.36,DGND,GND,,,,"/>
 <approved hash="102,1,160.02,80.01,DGND,GND,,,,"/>
@@ -8238,7 +8235,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="201,1,160.02,80.01,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,64.77,86.36,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,64.77,71.12,DGND,GND\, PWR_GND,,,,"/>
-<approved hash="201,1,59.69,106.68,DGND,GND\, PWR_GND,,,,"/>
+<approved hash="201,1,59.69,111.76,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,281.94,113.03,DGND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,17.78,101.6,GND,GND\, PWR_GND,,,,"/>
 <approved hash="201,1,7.62,101.6,GND,GND\, PWR_GND,,,,"/>
@@ -8261,6 +8258,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="104,1,162.56,264.16,UC1,VDD_3,VCC,,,"/>
 <approved hash="104,1,152.4,187.96,UC1,VSS_A,AV-,,,"/>
 <approved hash="202,1,-25.4,104.14,U2,BP,,,,"/>
+<approved hash="104,1,-49.53,171.45,U3,GND,PWR_GND,,,"/>
+<approved hash="104,1,-49.53,146.05,U3,VCC,PWR_VCC,,,"/>
 <approved hash="106,1,119.38,205.74,2,,,,,"/>
 <approved hash="106,1,119.38,226.06,9,,,,,"/>
 <approved hash="209,1,119.38,241.3,12,,,,,"/>
@@ -8288,8 +8287,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="106,1,218.44,200.66,31,,,,,"/>
 <approved hash="113,1,233.68,128.852,D2,,,,,"/>
 <approved hash="113,1,-114.021,257.813,GND,,,,,"/>
-<approved hash="113,1,249.911,349.25,PAD4,,,,,"/>
-<approved hash="113,1,249.911,345.44,PAD7,,,,,"/>
+<approved hash="113,1,249.911,345.44,PAD4,,,,,"/>
+<approved hash="113,1,249.911,349.25,PAD7,,,,,"/>
 <approved hash="113,1,249.911,341.63,PAD13,,,,,"/>
 <approved hash="113,1,237.769,341.63,PAD14,,,,,"/>
 <approved hash="113,1,237.769,345.44,PAD15,,,,,"/>
