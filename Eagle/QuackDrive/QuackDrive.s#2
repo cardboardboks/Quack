@@ -7889,7 +7889,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="314.96" y="349.25"/>
 </segment>
 </net>
-<net name="8" class="0">
+<net name="SBUSIN" class="0">
 <segment>
 <pinref part="UC1" gate="G$1" pin="PA3/USART2_RX/ADC12_IN3/TIM2_CH4"/>
 <pinref part="PAD23" gate="1" pin="P"/>

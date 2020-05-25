@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
@@ -24,14 +24,14 @@
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,10 +46,10 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -360,7 +360,6 @@
 <hole x="23.7" y="16.3" drill="0.35"/>
 <hole x="25.1" y="16.3" drill="0.35"/>
 <hole x="25.1" y="15.5" drill="0.35"/>
-<text x="34.85" y="21.74" size="1.016" layer="26" rot="MR90">S3G</text>
 <text x="31.38833125" y="19.842240625" size="1.016" layer="26" rot="MR270" align="bottom-right">G+-5</text>
 <text x="17.922603125" y="25.8454875" size="0.4064" layer="26" rot="MR0">GROUNDDDD</text>
 <text x="20.46408125" y="26.89310625" size="0.4064" layer="26" rot="MR0" align="bottom-right">Smol Gnd</text>
@@ -411,15 +410,15 @@ if visible</text>
 Mount</text>
 <text x="3.91773125" y="12.607525" size="0.4064" layer="26" rot="MR45">Never gonna give you up
 Never gonna let you down
-Never gonna run around and desert you
+Never gonna run around and
 Never gonna make you cry
 Never gonna say goodbye
-Never gonna tell a lie and hurt you Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you</text>
+Never gonna tell a lie a
+Never gonna let you
+Never gonna run ar
+Never gonna make
+Never gonna say go
+Never gonna tell a</text>
 <rectangle x1="-0.0127" y1="-0.0127" x2="14.3383" y2="0.0127" layer="201"/>
 <rectangle x1="-0.0127" y1="0.0127" x2="14.3383" y2="0.0381" layer="201"/>
 <rectangle x1="-0.0127" y1="0.0381" x2="14.3383" y2="0.0635" layer="201"/>
@@ -9514,16 +9513,13 @@ design rules under a new name.</description>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/allegro-microsystems/ACS70331EESATR-005B3/620-1887-1-ND/8120687?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="17.794921875" y="9.938446875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="Allegro MicroSystems LLC" x="17.794921875" y="9.938446875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MP" value="ACS70331EESATR-005B3" x="17.794921875" y="9.938446875" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="15.254921875" y="7.398446875" size="1.27" layer="26" rot="MR180"/>
 <attribute name="PACKAGE" value="WFQFN-12 Allegro MicroSystems LLC" x="17.794921875" y="9.938446875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="15.254921875" y="13.748446875" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R4" library="SparkFun" package="C0402" value="1k" x="35.71654375" y="6.437225" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.41504375" y="7.326225" size="0.4064" layer="25" rot="R270"/>
+<element name="R4" library="SparkFun" package="C0402" value="4K7" x="35.71654375" y="6.437225" smashed="yes" rot="R270">
 <attribute name="VALUE" x="34.57354375" y="7.516725" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="Q3" library="adafruit" package="SOT23" value="" x="33.6400875" y="9.831" smashed="yes" rot="R90">
-<attribute name="NAME" x="31.7350875" y="7.926" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="36.8150875" y="7.926" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
@@ -10475,10 +10471,10 @@ design rules under a new name.</description>
 <wire x1="33.485" y1="2.571753125" x2="32.385" y2="2.571753125" width="0.2032" layer="1"/>
 <via x="34.359928125" y="2.805725" extent="1-16" drill="0.254"/>
 <wire x1="33.718971875" y1="2.805725" x2="33.485" y2="2.571753125" width="0.2032" layer="1"/>
-<wire x1="25.66235" y1="22.34765" x2="25.66235" y2="28.92" width="0.2032" layer="16"/>
+<wire x1="25.784815625" y1="22.277584375" x2="25.784815625" y2="28.92" width="0.2032" layer="16"/>
 <contactref element="U$3" pad="13"/>
 <contactref element="U$3" pad="12"/>
-<wire x1="25.66235" y1="28.92" x2="29.459659375" y2="28.92" width="0.2032" layer="16"/>
+<wire x1="25.784815625" y1="28.92" x2="29.459659375" y2="28.92" width="0.2032" layer="16"/>
 <wire x1="29.459659375" y1="28.92" x2="33.49" y2="28.92" width="0.2032" layer="16"/>
 <wire x1="30.89" y1="18.63" x2="30.09" y2="18.63" width="0.2032" layer="16"/>
 <via x="30.818765625" y="11.560390625" extent="1-16" drill="0.254"/>
@@ -10492,8 +10488,7 @@ design rules under a new name.</description>
 <wire x1="29.9201" y1="19.4899" x2="28.873" y2="19.4899" width="0.2032" layer="16"/>
 <contactref element="PAD17" pad="1"/>
 <wire x1="27.160046875" y1="23.749953125" x2="27.24" y2="23.67" width="0.2032" layer="16"/>
-<wire x1="26.25" y1="22.277584375" x2="25.732415625" y2="22.277584375" width="0.2032" layer="16"/>
-<wire x1="25.732415625" y1="22.277584375" x2="25.66235" y2="22.34765" width="0.2032" layer="16"/>
+<wire x1="26.25" y1="22.277584375" x2="25.784815625" y2="22.277584375" width="0.2032" layer="16"/>
 <wire x1="28.876290625" y1="9.02" x2="28.92" y2="8.976290625" width="0.2032" layer="16"/>
 <wire x1="28.92" y1="8.976290625" x2="29.876290625" y2="8.02" width="0.2032" layer="16"/>
 <wire x1="29.876290625" y1="8.02" x2="33.938425" y2="8.02" width="0.2032" layer="16"/>
@@ -11774,7 +11769,7 @@ design rules under a new name.</description>
 <wire x1="3.64" y1="6.75" x2="3.64" y2="6.639" width="0.2032" layer="16"/>
 <wire x1="3.64" y1="6.75" x2="3.64" y2="7.015" width="0.2032" layer="16"/>
 </signal>
-<signal name="N$3">
+<signal name="SBUSIN">
 <contactref element="PAD23" pad="1"/>
 <contactref element="Q3" pad="1"/>
 <wire x1="34.7400875" y1="8.881" x2="34.6861375" y2="8.93495" width="0.2032" layer="1"/>

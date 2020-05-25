@@ -5623,7 +5623,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <part name="U$8" library="WM8952DKR F other half" deviceset="WM8952DKR" device="" package3d_urn="urn:adsk.eagle:package:14739097/1"/>
 <part name="PAD23" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="U3" library="ACS70331EESATR-005B3" deviceset="ACS70331EESATR-005B3" device=""/>
-<part name="R4" library="SparkFun" deviceset="RESISTOR" device="0402" value="1k"/>
+<part name="R4" library="SparkFun" deviceset="RESISTOR" device="0402" value="4K7"/>
 <part name="SUPPLY6" library="supply2" deviceset="DGND" device="" value="GND"/>
 <part name="Q3" library="adafruit" deviceset="MOSFET-N" device="REFLOW"/>
 <part name="P+18" library="SparkFun" deviceset="VCC" device=""/>
@@ -7656,7 +7656,7 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=65346
 <junction x="314.96" y="349.25"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="SBUSIN" class="0">
 <segment>
 <pinref part="PAD23" gate="1" pin="P"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
